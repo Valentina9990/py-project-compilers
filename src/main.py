@@ -32,7 +32,7 @@ while True:
     print("8. Remover tarea por ID")
     print("9. Salir")
     
-    choice = input("Ingrese el número de opcion: ")
+    choice = input("Ingrese el numero de opcion: ")
     print()
     
     if choice == '1':
