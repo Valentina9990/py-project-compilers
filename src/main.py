@@ -32,17 +32,21 @@ while True:
     print("8. Remover tarea por ID")
     print("9. Salir")
     
-    choice = input("Ingrese el número de opción: ")
-
+    choice = input("Ingrese el número de opcion: ")
+    print()
+    
     if choice == '1':
         register_task()
     elif choice == '2':
         mark_task_completed()
     elif choice == '3':
+        print("Tareas completadas:")
         print_dictionaries(planner['getCompletedTasks']())
     elif choice == '4':
+        print("Tareas pendientes:")
         print_dictionaries(planner['getPendingTasks']())
     elif choice == '5':
+        print("Tareas ordenadas por prioridad:")
         print_dictionaries(planner['getSortedTasksByPriority']())
     elif choice == '6':
         tag = input("Ingrese la etiqueta de la tarea para filtrar: ")
@@ -56,5 +60,6 @@ while True:
         print("Saliendo del programa.")
         break
     else:
-        print("Opción inválida. Por favor, ingrese una opción válida del menú.")
+        print("Opcion invalida. Por favor, ingrese una opcion valida del menu.")
+
 
